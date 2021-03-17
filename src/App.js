@@ -1,13 +1,16 @@
 import React, {useEffect, useState} from 'react';
-import Details from "./components/Details";
-import Books from "./components/Books";
 import LOCALHOST from "./constants/app";
 import DetailsContext from "./context/DetailsContext";
 import RolesContext from "./context/RolesContext";
+import Menu from "./components/Menu";
+import Navigation from "./components/Navigation";
+import BooksContext from "./context/BooksContext";
 
 function App() {
     const [details, setDetails] = useState({});
     const [roles, setRoles] = useState([]);
+    const [books, setBooks] = useState([]);
+
     useEffect(() => {
         fetch(`${LOCALHOST}/details`)
             .then(res => res.json())
@@ -23,13 +26,25 @@ function App() {
                 setRoles(roles);
             })
     }, []);
+
+    useEffect(() => {
+        fetch(`${LOCALHOST}/books`)
+            .then(res => res.json())
+            .then(books => {
+                setBooks(books);
+            })
+    }, []);
     return (
-        <RolesContext.Provider value={{roles, setRoles}}>
-            <DetailsContext.Provider value={{details, setDetails}}>
-                <Details/>
-                <Books/>
-            </DetailsContext.Provider>
-        </RolesContext.Provider>
+        <>
+            <Menu/>
+            <RolesContext.Provider value={{roles, setRoles}}>
+                <DetailsContext.Provider value={{details, setDetails}}>
+                    <BooksContext.Provider value={{books, setBooks}}>
+                        <Navigation />
+                    </BooksContext.Provider>
+                </DetailsContext.Provider>
+            </RolesContext.Provider>
+        </>
     );
 }
 

@@ -1,10 +1,9 @@
 import React, {useContext} from 'react';
-import Blames from "./Blames";
 import DetailsContext from "../context/DetailsContext";
 import RolesContext from "../context/RolesContext";
 
 const Details = () => {
-    const {details, setDetails} = useContext(DetailsContext);
+    const {details} = useContext(DetailsContext);
     const {roles, setRoles} = useContext(RolesContext);
     const {name, userName, trait} = details;
     const impersonate = () => {
@@ -22,7 +21,6 @@ const Details = () => {
                 roles && roles.indexOf('IMPERSONATOR') >= 0 &&
                     <button onClick={impersonate}>Impersonate</button>
             }
-            <Blames />
         </div>
     )
 };
