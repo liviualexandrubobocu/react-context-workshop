@@ -1,20 +1,20 @@
 {
   "details": {
-    "userName": "draco_malfoy",
-    "name": "Draco Malfoy",
-    "trait": "cunning",
+    "userName": "harry_potter",
+    "name": "Harry Potter",
+    "trait": "courageous",
     "blames": [
       {
         "id": 1,
-        "value": "Cheats at tests"
+        "value": "Doesn't study much"
       },
       {
         "id": 2,
-        "value": "Cheats at Quidditch"
+        "value": "Stays out afterhours"
       }
     ]
   },
-  "roles": ["STUDENT", "IMPERSONATOR"],
+  "roles": ["STUDENT"],
   "books": [
     {
       "id": 1,
