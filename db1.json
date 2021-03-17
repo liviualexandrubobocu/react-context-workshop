@@ -1,0 +1,31 @@
+{
+  "details": {
+    "userName": "hermione_granger",
+    "name": "Hermione Granger",
+    "trait": "smart",
+    "blames": []
+  },
+  "roles": ["STUDENT"],
+  "books": [
+    {
+      "id": 1,
+      "name": "The Standard Book of Spells",
+      "author": "Miranda Goshawk"
+    },
+    {
+      "id": 2,
+      "name": "Magical Theory",
+      "author": "Adalbert Waffling"
+    },
+    {
+      "id": 3,
+      "name": "A Beginners’ Guide to Transfiguration",
+      "author": "Emeric Switch"
+    },
+    {
+      "id": 4,
+      "name": "One Thousand Magical Herbs and Fungi",
+      "author": "Phyllida Spore"
+    }
+  ]
+}
