@@ -3,29 +3,42 @@
     "userName": "hermione_granger",
     "name": "Hermione Granger",
     "trait": "smart",
-    "blames": []
+    "blames": [
+      {
+        "id": 1,
+        "value": "She is constantly mocking Ron"
+      },
+      {
+        "id": 2,
+        "value": "Doesn't play Quidditch"
+      }
+    ]
   },
   "roles": ["STUDENT"],
   "books": [
     {
       "id": 1,
       "name": "The Standard Book of Spells",
-      "author": "Miranda Goshawk"
+      "author": "Miranda Goshawk",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       "id": 2,
       "name": "Magical Theory",
-      "author": "Adalbert Waffling"
+      "author": "Adalbert Waffling",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       "id": 3,
       "name": "A Beginners’ Guide to Transfiguration",
-      "author": "Emeric Switch"
+      "author": "Emeric Switch",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       "id": 4,
       "name": "One Thousand Magical Herbs and Fungi",
-      "author": "Phyllida Spore"
+      "author": "Phyllida Spore",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
   ]
 }
